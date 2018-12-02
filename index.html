@@ -8,8 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Моя дом роб</title>
-<style>.row {  margin-right: 5%;
-  margin-left: 5%; 
+<style>.row {   
   
   width: 100%;
 }
@@ -112,6 +111,44 @@
  
   
 }
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+     float: left;
+   
+    padding: 10px;
+	margin:25px;
+	 border: 5px solid #C0C0C0;
+	 color:#C0C0C0;border-radius: 15px; 
+	  background-color:green;
+}
+.box2 {
+    float: left;
+   
+    padding: 10px;
+	margin:25px;
+	 border: 5px solid green;
+	 color:green;border-radius: 15px; 
+	 background-color:#C0C0C0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+	
+}
+figcaption {text-align: center;font-size:25px}
+
+img{width:100%;
+	     height:100%;
+		border-radius: 15px; }
 </style>
 
 
@@ -153,51 +190,32 @@
 </p></div>
  </span>
 
-
-
-
-
-
 </body>
 
- <span class="col2"><h3  >Каталог товара</h3>
- <button type="button" onclick="document.getElementById('demo').style.width = '420px'" onclick="document.getElementById('d').style.color='red'" >Click Me 1!</button>
- <button type="button" onclick="document.getElementById('d').style.color='red'" >Click Me 2!</button>
- <button type="button" onclick="document.getElementById('dem').style.border='5px solid green'" >Click Me 3!</button>
- <a href="spisok.html"><button type="button">Click Me 4!</button></a>
-
- <div class=" row">
+ <span class="col2"><h3  >Фото</h3>
+  <div class=" row">
  
 
-		     <div class=" flex-item col-lg-6 col-lg-12 col-lg-1"id="demo">
-		           <img class="img2" src="23.jpg" alt="***"><figcaption style="text-align:center;">Мужчинам</figcaption>
-			</div>
-                   <div class="flex-item col-lg-6 col-lg-12 col-lg-1 "id="d"><img class="img2" src="19.jpg" alt="***"><figcaption style="text-align:center;">Сумки</figcaption></div>
-		   
-		     <div class="flex-item col-lg-6 col-lg-12 col-lg-1">
-		           <img class="img2" src="25.jpg" alt="***"id="dem"><figcaption style="text-align:center;">Женщинам</figcaption>
-			</div>
-                   <div class="flex-item col-lg-6 col-lg-12 col-lg-1"><img class="img2" src="20.jpg" alt="***"><figcaption style="text-align:center;">Мебель</figcaption></div>
-		   
 
-		  
-		     <div class="flex-item col-lg-6 col-lg-12 col-lg-1">
-		           <img class="img2" src="24.jpg" alt="***"><figcaption style="text-align:center;">Детям</figcaption>
-			</div>
-                   <div class="flex-item col-lg-6 col-lg-12 col-lg-1"><img class="img2" src="16.jpg" alt="***"><figcaption style="text-align:center;">Техника</figcaption></div>
-		  
-		   
-		
-		     <div class="flex-item col-lg-6 col-lg-12 col-lg-1">
-		           <img class="img2" src="21.jpg" alt="***"><figcaption style="text-align:center;">Аксессуары</figcaption>
-			</div>
-                   <div class="flex-item col-lg-6 col-lg-12 col-lg-1"><img class="img2" src="18.jpg" alt="***"><figcaption style="text-align:center;">Электронника</figcaption></div>
-		  
-		  </div> 
-		   
-
-	
+<div class="clearfix">
  
+ <script type="text/javascript">
+		var size = 100; 
+		for (var i = 1; i <= size; ++i)
+      if  (i % 2 == 0) {
+                     document.write("<div class='box2 col-lg-6 col-lg-12 col-lg-1' ><img  src='https://picsum.photos/290/290/?" + i+ "' alt='' ;><figcaption > Елемент - " + i+ "</figcaption></img></div>");
+                                } 
+        else {
+   
+			document.write("<div class='box col-lg-6 col-lg-12 col-lg-1' ><img  src='https://picsum.photos/290/290/?" + i+ "' alt='' ;><figcaption > Елемент - " + i+ "</figcaption></img></div>");
+			
+		} 
+	</script>
+
+
+</div>
+ 
+  
  </span>
  
  
@@ -225,3 +243,12 @@
    </footer>
 </body>
  </html>
+
+
+
+
+
+
+
+
+
