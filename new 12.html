@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style1.css" type="text/css">
+<title>Моя дом роб</title>
+
+</head>
+
+<header> 
+<div class="div ">
+<a href="index.html"><button class="w3-btn w3-orange w3-xlarge" >Главная<i class="w3-margin-left fa fa-home"></i></button></a>
+<button class="w3-btn w3-blue w3-xlarge" onclick="document.getElementById('id01').style.display='block'">Купить<i class="w3-margin-left fa fa-shopping-cart"></i></button>
+ </div>
+</header>
+
+
+
+<body>  
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Ваше имя</b></label>
+      <input type="text" placeholder="Введите имя" name="uname" required>
+  
+   
+      <label for="email"><b>Ваш Email</b></label>
+              <input type="email" placeholder="Введите ел.адрес" name="email"required>
+     
+   
+	  <label for="Phone"><b>Ваш телефон</b></label>
+              <input type="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"placeholder="формат: 999-999-9999"required>
+	    
+       <label for="textarea"><b>Ваше сообщение</b></label>
+      
+	  <div> <textarea style="width:100%;padding: 12px 20px; margin: 8px 0;" rows="10" cols="45" border=" 1px solid #ccc"   name="text"placeholder="текст"required></textarea></div>
+      <button type="submit">Отправить</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+      
+    </div>
+  </form>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+ <div style="background-color:#FFF8DC;"> 
+  <h1>Мужчинам</h1>
+<div class="clearfix">
+ 
+ <script type="text/javascript">
+		var size = 10; 
+		for (var i = 1; i <= size; ++i)
+      if  (i % 2 == 0) {
+                     document.write("<div class='box2' ><img  src='images/" + i+ ".jpg' alt='' ;><figcaption >- " + i+ " -</figcaption></img></div>");
+                                } 
+        else {
+   
+			document.write("<div class='box' ><img  src='images/" + i+ ".jpg' alt='' ;><figcaption >- " + i+ "</figcaption></img></div>");
+			
+		} 
+	
+	</script>
+ </div> 
+
+ 
+ 
+  <div style="background-color:	#FFE4E1;">
+   <a name="top"><h1>Женщинам</h1></a>
+<div class="clearfix">
+ 
+ <script type="text/javascript">
+		
+
+		var size = 20; 
+		for (var i = 11; i <= size; ++i)
+      if  (i % 2 == 0) {
+                     document.write("<div class='box2' ><img  src='images/" + i+ ".jpg' alt='' ;><figcaption >- " + i+ " -</figcaption></img></div>");
+                                } 
+        else {
+   
+			document.write("<div class='box' ><img  src='images/" + i+ ".jpg' alt='' ;><figcaption >- " + i+ " -</figcaption></img></div>");
+			
+		} 
+	</script>
+
+</div>
+ </div> 
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
